@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+
 public class StringCalculatorTestPretical {
 
 	//1.The method can take 0, 1 or 2 numbers, and will return their sum
@@ -45,6 +46,13 @@ public class StringCalculatorTestPretical {
 		public void sumsTheTwoNumbersSccuess() {
 			int result = StringCalculatatorPretical.add("1,2");
 			assertEquals(3, result);
+		}
+		
+		//Failure
+		@Test
+		public void sumsTheTwoNumbersFaliure() {
+			int result = StringCalculatatorPretical.add("1,2");
+			assertEquals(1, result);
 		}
 	
 }
