@@ -40,5 +40,11 @@ public class StringCalculatorTestPretical {
 			assertEquals(1, result);
 		}
 		
+		//Success
+		@Test
+		public void sumsTheTwoNumbersSccuess() {
+			int result = StringCalculatatorPretical.add("1,2");
+			assertEquals(3, result);
+		}
 	
 }
