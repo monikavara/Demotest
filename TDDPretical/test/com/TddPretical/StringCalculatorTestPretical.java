@@ -106,7 +106,7 @@ public class StringCalculatorTestPretical {
 		public final void runTimeExceprtionGenerate() {
 		    RuntimeException exception = null;
 		    try {
-		    	StringCalculatatorPretical.add("3,-6,15,-18,40,20");
+		    	StringCalculatatorPretical.negativeNumber("3,-6,15,-18,40,20");
 		    } catch (RuntimeException e) {
 		        exception = e;
 		    }
@@ -114,6 +114,10 @@ public class StringCalculatorTestPretical {
 		    Assert.assertEquals("Negatives not allowed:", exception.getMessage());
 		}
 		
+	@Test
+	public final void NumberBigger() {
+		Assert.assertEquals(3 + 1000 + 6, StringCalculatatorPretical.negativeNumber("3,1008,1005,6,1456"));
+	}
 		
 		
 }
