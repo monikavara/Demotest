@@ -25,6 +25,7 @@ public class StringCalculatorTestPretical {
 			assertEquals(0, result);
 		}*/
 		
+		
 		//Success 
 		@Test
 		public void OnlyOneNumberSuccess() {
@@ -32,28 +33,6 @@ public class StringCalculatorTestPretical {
 			assertEquals(1, result);
 		}
 		
-		//Failure
-		/*@Test
-		public void OnlyOneNumberSuccessFaliure() {
-			int result = StringCalculatatorPretical.add("1");
-			assertEquals(1, result);
-		}*/
 		
-		
-		//Success
-		@Test
-		public void sumsTheTwoNumbersSccuess() {
-			int result = StringCalculatatorPretical.add("1,2");
-			assertEquals(3, result);
-		}
-		
-		//Failure
-		@Test
-		public void sumsTheTwoNumbersFaliure() {
-			int result = StringCalculatatorPretical.add("1,2");
-			assertEquals(1, result);
-		}
-	
-	
 	
 }
