@@ -84,7 +84,7 @@ public class StringCalculatorTestPretical {
 		
 		@Test
 		public void SupportDiffrentDelimeterSuccess() {
-			int result = StringCalculatatorPretical.SupportDiffrentDelimeter("//;n3;6;15");
+			int result = StringCalculatatorPretical.SupportDiffrentDelimeter("//;n;;3;6;\n15");
 			assertEquals(3+6+15, result);
 		}
 		
