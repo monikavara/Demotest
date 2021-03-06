@@ -33,6 +33,12 @@ public class StringCalculatorTestPretical {
 			assertEquals(1, result);
 		}
 		
+		//Failure
+		@Test
+		public void OnlyOneNumberSuccessFaliure() {
+			int result = StringCalculatatorPretical.add("2");
+			assertEquals(1, result);
+		}
 		
 	
 }
