@@ -82,11 +82,20 @@ public class StringCalculatorTestPretical {
 			assertEquals(1 + 2 + 3 + 4 +5, result);
 		}*/
 		
+		//Success
 		@Test
 		public void SupportDiffrentDelimeterSuccess() {
 			int result = StringCalculatatorPretical.SupportDiffrentDelimeter("//;n;;3;6;\n15");
 			assertEquals(3+6+15, result);
 		}
+		
+		//Faliure
+		@Test
+		public void SupportDiffrentDelimeterFaliure() {
+			int result = StringCalculatatorPretical.SupportDiffrentDelimeter("//;n;;3;6;\n15");
+			assertEquals(3+6+15+12, result);
+		}
+		
 		
 		
 		
