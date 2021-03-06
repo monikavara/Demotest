@@ -62,5 +62,11 @@ public class StringCalculatorTestPretical {
 			assertEquals(1 + 2 + 3 + 4, result);
 		}
 		
+		@Test
+		public void sumsAnUnknownAmountOfCommaSepreatedFaliure() {
+			int result = StringCalculatatorPretical.add("1,2,3,4");
+			assertEquals(1 + 2 + 3 + 4+5, result);
+		}
+		
 		
 }
