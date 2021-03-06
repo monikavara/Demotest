@@ -2,6 +2,7 @@ package com.TddPretical;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 
@@ -96,6 +97,22 @@ public class StringCalculatorTestPretical {
 			assertEquals(3+6+15+12, result);
 		}
 		
+		@Test(expected = RuntimeException.class)
+		public final void negativeNumber() {
+			StringCalculatatorPretical.negativeNumber("3,-6,15,-18,40,20");
+		}
+		
+		@Test
+		public final void runTimeExceprtionGenerate() {
+		    RuntimeException exception = null;
+		    try {
+		    	StringCalculatatorPretical.add("3,-6,15,-18,40,20");
+		    } catch (RuntimeException e) {
+		        exception = e;
+		    }
+		    Assert.assertNotNull(exception);
+		    Assert.assertEquals("Negatives not allowed:", exception.getMessage());
+		}
 		
 		
 		
