@@ -35,11 +35,11 @@ public class StringCalculatorTestPretical {
 		}
 		
 		//Failure
-		@Test
+		/*@Test
 		public void OnlyOneNumberSuccessFaliure() {
 			int result = StringCalculatatorPretical.add("2");
 			assertEquals(1, result);
-		}
+		}*/
 		
 		//Success
 		@Test
@@ -49,10 +49,18 @@ public class StringCalculatorTestPretical {
 		}
 		
 		//Failure
-		@Test
+		/*@Test
 		public void sumsTheTwoNumbersFaliure() {
 			int result = StringCalculatatorPretical.add("1,2");
 			assertEquals(1, result);
-		}
+		}*/
 	
+		
+		@Test
+		public void sumsAnUnknownAmountOfCommaSepreatedSuccess() {
+			int result = StringCalculatatorPretical.add("1,2,3,4");
+			assertEquals(1 + 2 + 3 + 4, result);
+		}
+		
+		
 }
